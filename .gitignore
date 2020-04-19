@@ -1,0 +1,8 @@
+Makefile
+.classpath
+.DS_store
+.project
+target/*
+.factoryPath
+.vscode/*
+.settings/*
