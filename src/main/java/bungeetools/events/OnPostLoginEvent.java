@@ -54,9 +54,12 @@ public class OnPostLoginEvent implements Listener {
 		player.sendMessage();
 	}
 	
-	public void sendChatJoinMessage(PostLoginEvent Event) {
+	public void sendChatJoinMessage(PostLoginEvent event) {
 		for (ProxiedPlayer player : ProxyServer.getInstance().getPlayers()) {
-			TextComponent message = new TextComponent(Event.getPlayer().getDisplayName() + " joined the server");
+			if (event.getPlayer() == player) {
+				return;
+			};
+			TextComponent message = new TextComponent(event.getPlayer().getDisplayName() + " joined the server");
 			message.setColor(ChatColor.YELLOW);
 			player.sendMessage(message);
 		}

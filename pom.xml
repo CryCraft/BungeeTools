@@ -6,7 +6,7 @@
 
   <groupId>BungeeTools</groupId>
   <artifactId>BungeeTools</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 
   <name>BungeeTools</name>
 
@@ -20,10 +20,6 @@
     <repository>
       <id>bungeecord-repo</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </repository>
-    <repository>
-        <id>spigot-repo</id>
-        <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
     </repository>
   </repositories>
 
@@ -54,12 +50,6 @@
       <artifactId>bungeecord-api</artifactId>
       <version>1.15-SNAPSHOT</version>
       <type>javadoc</type>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.spigotmc</groupId>
-      <artifactId>spigot-api</artifactId>
-      <version>1.15.2-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>

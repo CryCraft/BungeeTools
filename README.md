@@ -3,8 +3,9 @@
 basic bungee plugin for server wide commands and utilities
 
 ## Features
-- [x] /<server> command
+- [x] survival, lobby, creative command
 - [x] join messages
+- [x] player list on hover in tab
 
 ## TODO
 - [ ]
